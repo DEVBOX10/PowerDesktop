@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
   <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
@@ -15,7 +17,7 @@
   <script src="main.js"></script>
 </head>
 
-<body onresize="Window_OnResize">
+<body onresize="Window_OnResize();">
   <header>
     <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
     <h3 id="app_title">Power Desktop</h3>
@@ -23,14 +25,35 @@
       <span class="ms-Button-label">Get Preview</span>
     </button>
     <div id="menu_nav" style="position: absolute; right: 175px; top: 30px;">
-      <a class="link" style="margin-right: 15px;">Home</a>
+      <a class="link_selected" style="margin-right: 15px;">Home</a>
+      <a class="link" style="margin-right: 15px;">Power Apps</a>
       <a class="link">Feed & news</a>
     </div>
   </header>
   <section id="start">
     <div id="start_div">
       <div id="start_pane">
-        
+        <img id="start_pane_logo" src="img/PowerDesktop.png" height="120" width="120" />
+        <h2>New generation of Windows Desktop</h2>
+        <hr class="line"/>
+        <p>
+          Explore the new experience of Windows Desktop.<br />
+          More simple, more effective, more #Fluent.<br />
+          #Never stop running Windows!<br />
+        </p>
+        <br />
+        <button id="review_versions_button" class="ms-Button ms-Button--primary">
+          <span class="ms-Button-label">Get latest version</span>
+        </button>
+        <button id="send_review_button" class="ms-Button">
+          <span class="ms-Button-label">Send review</span>
+        </button>
+        <br />
+        <button class="circle_button" style="height: 45px; width: 45px; margin-top: 40px;">
+          <span class="material-icons" style="margin-top: 5px;">
+            expand_more
+          </span>
+        </button>
       </div>
     </div>
   </section>

@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+button{
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
 header{
     height: 80px;
     width: 100%;
@@ -21,8 +26,45 @@ header{
     color: rgb(30, 30, 30);
 }
 
+.link_selected{
+    background-color: #1179FB;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.link_selected:hover{
+    text-decoration: underline;
+    background-color: #005ACA;
+}
+
 .link:hover{
     text-decoration: underline;
+}
+
+.circle_button{
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-style: none;
+}
+
+.circle_button:hover{
+    background-color: #F5F5F5;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
 
 #start_div{
@@ -46,8 +88,23 @@ header{
     backdrop-filter: blur(10px);
     display: inline-block;
     border-radius: 6px;
+    max-width: 800px;
+    max-height: 600px;
     height: 66%;
     width: 75%;
+    padding: 20px;
+}
+
+.line{
+    border-style: none;
+    background-color: rgb(30, 30, 30);
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#start_pane_logo{
+    margin-top: 30px;
 }
 
 #app_logo{
