@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
@@ -13,7 +13,7 @@
   
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script src="main.js"></script>
 </head>
 
@@ -49,13 +49,41 @@
           <span class="ms-Button-label">Send review</span>
         </button>
         <br />
-        <button class="circle_button" style="height: 45px; width: 45px; margin-top: 40px;">
-          <span class="material-icons" style="margin-top: 5px;">
-            expand_more
-          </span>
-        </button>   
+        <a href="#base_information">
+          <button class="circle_button" style="height: 45px; width: 45px; margin-top: 40px;">
+            <span class="material-icons" style="margin-top: 5px;">
+              expand_more
+            </span>
+          </button>
+        </a>
       </div>
     </div>
   </section>
+  <section id="base_information">
+    <div id="base_information_div">
+      <img src="img/apps.png" height="80px" width="80px" />
+      <h1 style="margin-top: 50px;">Integrated apps and extensions</h1>
+      <p>
+        Power Desktop includes support for extensions<br />
+        and mini-apps. Integration of mini applications will allow<br />
+        fast access to userful features Which should always be at hand.<br />
+      </p>
+      <div id="features_preview" class="table">
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/outlook.png" height="75px" width="75px" />
+          </div>
+        </div>
+      </div>
+      <button class="ms-Button ms-Button--primary" style="margin-top: 25px;">
+        <span class="ms-Button-label">Explore more</span>
+      </button>
+    </div>
+  </section>
+  <footer>
+    <p style="padding: 56px;">
+      Send review
+    </p>
+  </footer>
 </body>
 </html>
